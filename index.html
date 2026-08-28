@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-post</title>
+</head>
+<body>
+    <h2>Gjenkjenn epost</h2>
+    <h3>Skriv inn eposten din</h3>
+    <input type="text" onchange="checkEmail2(this.value)"> kvikklunsj
+
+    <script>
+    
+        function checkEmail2(userInput, at="@", dot="."){
+            let tegn = []
+            if (userInput.includes(at) && userInput.includes(dot) && !userInput.includes(" ")){
+                for (let i of userInput){
+                    if (i === at || i === dot){
+                        tegn.push(i) 
+                    };
+                };
+                if (tegn[0] === at && tegn[1] === dot){
+                    //console.log("true");
+                    return true
+                };
+            }
+            //console.log("false")
+            return false
+            };
+
+    </script>
+    
+</body>
+</html>
