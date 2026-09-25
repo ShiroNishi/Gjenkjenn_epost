@@ -5,3 +5,5 @@ Oppgave
   1. I første omgang skal funksjonen si at det er en epostadresse kun hvis teksten inneholder @.
   2. I tillegg: teksten skal ikke inneholde mellomrom.
   3. I tillegg: teksten skal ha et punktum et sted etter @.
+
+https://shironishi.github.io/Gjenkjenn_epost/
